@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-kevinfreistroffer-dev-134342-authRole",
+      "UnauthRoleArn": "arn:aws:iam::449114338572:role/amplify-kevinfreistroffer-dev-134342-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::449114338572:role/amplify-kevinfreistroffer-dev-134342-authRole",
+      "Region": "us-west-2",
+      "DeploymentBucketName": "amplify-kevinfreistroffer-dev-134342-deployment",
+      "UnauthRoleName": "amplify-kevinfreistroffer-dev-134342-unauthRole",
+      "StackName": "amplify-kevinfreistroffer-dev-134342",
+      "StackId": "arn:aws:cloudformation:us-west-2:449114338572:stack/amplify-kevinfreistroffer-dev-134342/578bfb20-f85d-11ea-8367-02a0a8dcf489",
+      "AmplifyAppId": "d2jgmdum6zpj9t"
+    },
+    "categories": {
+      "auth": {
+        "cognito81941c79": {}
+      }
+    }
+  }
+}
