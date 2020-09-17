@@ -8,8 +8,8 @@ import { appInitialState, AppContext } from "./state/app_state";
 import { routes } from "./routes";
 
 async function getData() {
-  let response = await API.get("server", "/server", "");
-  console.log("response", response);
+  // let response = await API.get("server", "/server", "");
+  // console.log("response", response);
 }
 
 function paintRoutes() {
