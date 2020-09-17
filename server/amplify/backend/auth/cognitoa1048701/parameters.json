@@ -1,6 +1,6 @@
 {
     "identityPoolName": "server_identitypool_d20abdd9",
-    "allowUnauthenticatedIdentities": false,
+    "allowUnauthenticatedIdentities": true,
     "resourceNameTruncated": "serverd20abdd9",
     "userPoolName": "server_userpool_d20abdd9",
     "autoVerifiedAttributes": [

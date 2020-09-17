@@ -31,6 +31,12 @@
           }
         }
       ]
+    },
+    "meLambda": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
     }
   },
   "auth": {
@@ -47,6 +53,20 @@
         {
           "category": "function",
           "resourceName": "me",
+          "attributes": [
+            "Name",
+            "Arn"
+          ]
+        }
+      ]
+    },
+    "meApi": {
+      "service": "API Gateway",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [
+        {
+          "category": "function",
+          "resourceName": "meLambda",
           "attributes": [
             "Name",
             "Arn"
