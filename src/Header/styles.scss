@@ -1,0 +1,89 @@
+header {
+  position: relative;
+  padding: 1rem;
+  background-color: black;
+  color: white;
+  overflow: hidden !important;
+
+  h1 {
+    flex: 1;
+    font-size: 3vw;
+  }
+
+  #menu-icon {
+  }
+
+  nav {
+    width: 100%;
+    ul {
+      display: none;
+
+      li {
+        margin: 0 0%;
+        a {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 30rem) {
+  header {
+    padding: 2rem;
+  }
+}
+
+@media only screen and (min-width: 40rem) {
+  header {
+    #menu-icon {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+
+      ul {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        li {
+          a {
+            font-size: 0.75rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 55rem) {
+  header {
+    #menu-icon {
+      display: none;
+    }
+
+    nav {
+      display: flex;
+
+      ul {
+        display: flex;
+        flex: 1;
+        justify-content: space-around;
+        li {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 78rem) {
+  header {
+    h1 {
+      flex: 2;
+    }
+  }
+}

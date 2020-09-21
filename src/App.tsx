@@ -1,7 +1,7 @@
 import React, { useEffect } from "react";
 
 import "./App.css";
-import Header from "./Header/Header";
+import Header from "./Header";
 import { API } from "aws-amplify";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { appInitialState, AppContext } from "./state/app_state";
