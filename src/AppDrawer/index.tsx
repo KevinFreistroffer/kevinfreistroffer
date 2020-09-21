@@ -1,7 +1,7 @@
 // @flow",
 import React, { Component } from "react";
 import Drawer from "@material-ui/core/Drawer";
-// import Button from "@material-ui/core/Button";
+import Button from "@material-ui/core/Button";
 
 type Props = {};
 type State = {
@@ -23,13 +23,13 @@ class AppDrawer extends Component<Props, State> {
     return (
       <div>
         Drawer functional component
-        <button
+        <Button
           onClick={() => {
             this.setState({ isOpen: !this.state.isOpen });
           }}
         >
           Toggle Drawer
-        </button>
+        </Button>
         <Drawer
           open={this.state.isOpen}
           onClose={() => this.setState({ isOpen: false })}

@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useContext } from "react";
-import Perf from "react-addons-perf";
+// import Perf from "react-addons-perf";
 import NavBar from "./components/NavBar";
 
 import { AppContext, AppState } from "../state/app_state";
