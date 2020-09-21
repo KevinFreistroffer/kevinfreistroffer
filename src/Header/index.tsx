@@ -4,17 +4,17 @@ import NavBar from "./components/NavBar";
 import { AppContext } from "../state/app_state";
 import "./styles.scss";
 import { Route } from "../routes";
-interface Props {
+type Props = {
   routes: Route[];
-}
+};
 
-function Header(props: Props) {
+const Header: React.FC<Props> = (props: Props) => {
   let context = React.useContext(AppContext);
   return (
     <header id="app-header" className="flex row">
       <NavBar title={context.title} routes={props.routes}></NavBar>
     </header>
   );
-}
+};
 
 export default Header;
