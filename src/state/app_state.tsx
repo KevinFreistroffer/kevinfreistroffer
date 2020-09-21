@@ -1,10 +1,10 @@
 import { createContext } from "react";
 import { Route } from "../routes";
 
-export interface AppState {
+export type AppState = {
   title: string;
   routes: Route[];
-}
+};
 
 export const appInitialState: AppState = {
   title: "Kevin Freistroffer",

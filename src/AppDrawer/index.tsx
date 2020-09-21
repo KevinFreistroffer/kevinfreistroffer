@@ -1,10 +1,44 @@
 // @flow",
-import React, { useState, useEffect } from "react";
+import React, { Component } from "react";
+import Drawer from "@material-ui/core/Drawer";
+import Button from "@material-ui/core/Button";
 
 type Props = {};
+type State = {
+  isOpen: boolean;
+};
 
-function AppDrawer(props: Props) {
-  return <div>Drawer functional component</div>;
+class AppDrawer extends Component<Props, State> {
+  constructor(props: Props) {
+    super(props);
+
+    // this.drawerRef = createRef();
+
+    this.state = {
+      isOpen: false
+    };
+  }
+
+  render() {
+    return (
+      <div>
+        Drawer functional component
+        <Button
+          onClick={() => {
+            this.setState({ isOpen: !this.state.isOpen });
+          }}
+        >
+          Toggle Drawer
+        </Button>
+        <Drawer
+          open={this.state.isOpen}
+          onClose={() => this.setState({ isOpen: false })}
+        >
+          Content
+        </Drawer>
+      </div>
+    );
+  }
 }
 
 export default AppDrawer;

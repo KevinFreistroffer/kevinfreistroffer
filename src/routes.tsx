@@ -1,12 +1,12 @@
 import React, { Component, FunctionComponent } from "react";
 import * as uuid from "uuid";
 
-export interface Route {
+export type Route = {
   id: string;
   path: string;
   text: string;
   component: FunctionComponent | Component;
-}
+};
 
 export const routes: Route[] = [
   {
